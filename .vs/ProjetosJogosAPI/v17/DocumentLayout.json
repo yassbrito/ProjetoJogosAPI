@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\48665566848\\Desktop\\ProjetoJogos\\ProjetosJogosAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BCEF0D9-DB95-4603-B327-434F2BE55BB6}|ProjetosJogosAPI.csproj|c:\\users\\48665566848\\desktop\\projetojogos\\projetosjogosapi\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BCEF0D9-DB95-4603-B327-434F2BE55BB6}|ProjetosJogosAPI.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BCEF0D9-DB95-4603-B327-434F2BE55BB6}|ProjetosJogosAPI.csproj|c:\\users\\48665566848\\desktop\\projetojogos\\projetosjogosapi\\repositories\\jogorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BCEF0D9-DB95-4603-B327-434F2BE55BB6}|ProjetosJogosAPI.csproj|solutionrelative:repositories\\jogorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BCEF0D9-DB95-4603-B327-434F2BE55BB6}|ProjetosJogosAPI.csproj|c:\\users\\48665566848\\desktop\\projetojogos\\projetosjogosapi\\domains\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BCEF0D9-DB95-4603-B327-434F2BE55BB6}|ProjetosJogosAPI.csproj|solutionrelative:domains\\jogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Jogo.cs",
+              "DocumentMoniker": "C:\\Users\\48665566848\\Desktop\\ProjetoJogos\\ProjetosJogosAPI\\Domains\\Jogo.cs",
+              "RelativeDocumentMoniker": "Domains\\Jogo.cs",
+              "ToolTip": "C:\\Users\\48665566848\\Desktop\\ProjetoJogos\\ProjetosJogosAPI\\Domains\\Jogo.cs",
+              "RelativeToolTip": "Domains\\Jogo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T18:17:27.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\48665566848\\Desktop\\ProjetoJogos\\ProjetosJogosAPI\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\48665566848\\Desktop\\ProjetoJogos\\ProjetosJogosAPI\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:58:34.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JogoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\48665566848\\Desktop\\ProjetoJogos\\ProjetosJogosAPI\\Repositories\\JogoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\JogoRepository.cs",
+              "ToolTip": "C:\\Users\\48665566848\\Desktop\\ProjetoJogos\\ProjetosJogosAPI\\Repositories\\JogoRepository.cs",
+              "RelativeToolTip": "Repositories\\JogoRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:25:54.395Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
