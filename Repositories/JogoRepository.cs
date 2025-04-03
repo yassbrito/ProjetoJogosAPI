@@ -15,7 +15,24 @@ namespace ProjetosJogosAPI.Repositories
         //
         public void Atualizar(Guid id, Jogo jogoAtualizado)
         {
-            
+            try
+            {
+                Jogo jogoBuscado = _context.Jogo.Find(id)!;
+
+                if (jogoBuscado != null)
+                {
+                    jogoBuscado.NomeDoJogo = jogo.NomeJogo;
+                }
+
+                _context.Jogo.Update(jogoBuscado!);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Cadastrar(Jogo jogoNovo)
