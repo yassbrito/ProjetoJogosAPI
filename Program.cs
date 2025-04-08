@@ -1,5 +1,7 @@
-using Azure;
+
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using ProjetosJogosAPI.Context;
 using ProjetosJogosAPI.Interfaces;
 using ProjetosJogosAPI.Repositories;
@@ -22,7 +24,6 @@ builder.Services // Acessa a coleção de serviços da aplicação (Dependency Inject
 builder.Services.AddDbContext<ProjetoJogosContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
 // Adicionar o  e a interface ao container de injeção de dependência
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IJogoRepository, JogoRepository>();
@@ -43,7 +44,7 @@ builder.Services.AddSwaggerGen(options =>
         Contact = new OpenApiContact
         {
             Name = "Clara Crastechini",
-            Url = new Uri("https://github.com/yassbrito")
+            Url = new Uri("https://github.com/Clara-Crastechini")
         },
         License = new OpenApiLicense
         {
@@ -83,8 +84,6 @@ if (app.Environment.IsDevelopment())
         options.RoutePrefix = string.Empty;
     });
 }
-
-
 
 //Adiciona o Cors(política criada)
 app.UseCors("CorsPolicy");

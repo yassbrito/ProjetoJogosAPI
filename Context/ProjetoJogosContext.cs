@@ -20,7 +20,7 @@ namespace ProjetosJogosAPI.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=NOTE31-S28\\SQLEXPRESS; DataBase = Jogo; User Id = sa; Pwd = Senai@134; TrustServerCertificate=True;");
+                optionsBuilder.UseSqlServer("Server=NOTE31-S28\\SQLEXPRESS; DataBase = Jogos; User Id = sa; Pwd = Senai@134; TrustServerCertificate=True;");
             }
         }
     }

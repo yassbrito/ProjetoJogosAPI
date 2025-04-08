@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProjetosJogosAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class DbJogo : Migration
+    public partial class Jogos : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -31,14 +31,14 @@ namespace ProjetosJogosAPI.Migrations
                     UsuarioID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Nome = table.Column<string>(type: "VARCHAR(80)", nullable: false),
                     NickName = table.Column<string>(type: "VARCHAR(30)", nullable: false),
-                    JogoFavorito = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    JogoID = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Usuario", x => x.UsuarioID);
                     table.ForeignKey(
-                        name: "FK_Usuario_Jogo_JogoFavorito",
-                        column: x => x.JogoFavorito,
+                        name: "FK_Usuario_Jogo_JogoID",
+                        column: x => x.JogoID,
                         principalTable: "Jogo",
                         principalColumn: "jogoID",
                         onDelete: ReferentialAction.Cascade);
@@ -51,9 +51,9 @@ namespace ProjetosJogosAPI.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Usuario_JogoFavorito",
+                name: "IX_Usuario_JogoID",
                 table: "Usuario",
-                column: "JogoFavorito");
+                column: "JogoID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Usuario_NickName",

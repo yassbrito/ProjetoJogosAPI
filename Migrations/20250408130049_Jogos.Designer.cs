@@ -12,8 +12,8 @@ using ProjetosJogosAPI.Context;
 namespace ProjetosJogosAPI.Migrations
 {
     [DbContext(typeof(ProjetoJogosContext))]
-    [Migration("20250403145746_DbJogo")]
-    partial class DbJogo
+    [Migration("20250408130049_Jogos")]
+    partial class Jogos
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,7 +52,7 @@ namespace ProjetosJogosAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("JogoFavorito")
+                    b.Property<Guid>("JogoID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("NickName")
@@ -65,7 +65,7 @@ namespace ProjetosJogosAPI.Migrations
 
                     b.HasKey("UsuarioID");
 
-                    b.HasIndex("JogoFavorito");
+                    b.HasIndex("JogoID");
 
                     b.HasIndex("NickName")
                         .IsUnique();
@@ -77,7 +77,7 @@ namespace ProjetosJogosAPI.Migrations
                 {
                     b.HasOne("ProjetosJogosAPI.Domains.Jogo", "Jogo")
                         .WithMany()
-                        .HasForeignKey("JogoFavorito")
+                        .HasForeignKey("JogoID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

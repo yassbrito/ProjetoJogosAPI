@@ -20,8 +20,8 @@ namespace ProjetosJogosAPI.Domains
         [Required(ErrorMessage = "o NickName eh obrigatorio")]
         public string? NickName { get; set; }
         
-        public Guid JogoFavorito { get; set; }
-        [ForeignKey("JogoFavorito")]
+        public Guid JogoID { get; set; }
+        [ForeignKey("JogoID")]
 
         public Jogo? Jogo { get; set; }
 
